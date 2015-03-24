@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Captain Anonymous</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- This is an HTML comment -->
+<!DOCTYPE html>
+  <div class="title">
+    STAGE 1 PROJECT by THIERRY
+  </div>
+  <div class="lesson">
+    <h1>Lesson 1</h1>
+      <h2>World Wide Web</h2>
+        <p>
+        <b>HTML = Hypertext Markup Language</b><br>
+        Invented in 1990. Currently 30 bn pages<br>
+        3 players: You (or I), Internet, Servers<br>
+        HTTP is the communication between Internet and Servers<br>
+        <br>
+        <b>HTML</b><br>
+        Markup: opening tag - "content" - closing tag. Makes an <b><em>element</em></b><br>
+        Exemples of tags: b for bold, em for italics, img for images, etc.<br><br>
+        </p>
+      <h2>What we have learned</h2>
+        <ol>
+          <li>What a page is: a text document written in HTML. Web browsers read theses documents and interpret and display them.</li>
+          <li>How coding works: writing text in a language that a computer can understand, with tags.</li>
+          <li>Computers are stupid: writing must be <b>exact</b> with <b>correct syntax</b></li>
+          <li>Programmers cannot remember everything: that is OK</li>
+          <li>Basic HTML vocabulary</li>
+          <ul>
+            <li>tags (opening and closing - except for void tags like "br")</li>
+            <li>elements = tag+content+tag</li>
+            <li>attribute: property of an HTML element
+          </ul>
+        </ol>
+  </div>
+  <div class="lesson">
+    <h1>Lesson 2</h1>
+      <h2>HTML & CSS</h2>
+        <ul>
+        <li>HTML & CSS are both "languages"</li>
+        <li>HTML controls the "structure" of the page</li>
+        <li>CSS controls the "style" of the page</li>
+        <li>When programmers talk about "DOM" (Document Object Model) they talk about the tree-like structure of a page</li>
+        </ul>
+      <h2>Recap with definitions</h2>
+        <p>  
+        HTML (Hyperlink Markup Language) is a standard markup language to create web pages<br>
+        CSS (Cascade Stayle Sheets) is a language used for describing the look and formatting of a document written in a markup language<br>
+        DOM (Document Oject Model) is a cross platform and a language independent convention for representing & interacting with objects in HTML. The nodes of every documents are organized in a tre structure called the DOM tree.
+        </p>
+      <h2>NEVER FORGET: BOXES are everywhere!</h2>
+        <p>
+        Use <"div"> for boxes and give each element a class attribute<br>
+        e.g. "<"div class="name">text<"/div>
+        </p>
+  </div>
+  <div class="lesson">
+    <h1>Lesson 3</h1>
+      <h2>CSS: code written to control the "style" of HTML elements and avoid repetitions</h2>
+        <p><b>Avoiding repetition</b><br>
+          A web page is made of many elements that will appear similar, like headings, background-color, content structures of boxes, etc.<br>
+          It would be very tedious and time-consuming to repeat the attribute of an element each time it is met in the HTML coding<br>
+          To avoid these repetition, all common attributes of repetitive elements will be defined in a CSS file as described below
+        </p>
+        <p>
+          <b>CSS language is built as:</b><br><br>
+        selector {declaration;<br>
+        }<br>
+        <ul>
+          <li>everything between { and } will be interpreted as a rule applying to all elements selected by the selector (example h1)</li>
+          <li>a declaration will be in the form:</li>
+        </ul>
+        <p>property:_value;
+        (for example: background-color:_black;)<br>
+        </p>
+        <p>
+          <b>Use class selector to apply style to certain boxes</b><br>
+        as in<br>
+          "<"div class= "stop"><br>
+          ".stop {<br>
+          "background-color: red;<br>
+          "}<br>
+          It will attribute the background color RED to all "stop" boxes.<br><br>
+        </p>
+        <p>
+        <b>Inheritance</b><br>
+        Most of declarations will inherit, i.e. apply to all div within a "<"style">.<br><br>
+      </p>
+      <p>
+        <b>Include CSS styling in a web page</b><br><br>
+        <u>Method 1</u><br>
+        Write CSS code in the "<"head"> of HTML.<br>
+        Good for small projects.<br><br>
+        <u>Method 2</u><br>
+        Link HTML to a separate CSS file:
+        <ol>
+        <li>Write structural HTML in a file (main.html)</li>
+        <li>Write all CSS code in another file (main.css)<br>
+        <li>add "<"head"> to top of HTML</li>
+        <li>add "<"link"> inside the "<"head">..."<"/head">(remember that link is a void tag)</li>
+        <li>add atribute to link.</li>
+        </ol>
+      </p>
+      <p>
+        <b>Code comments</b><br>
+        To comment code:<br>
+        in HTML: "<"!--comment--"><br>
+        in CSS: /*---*/.<br>
+      </p>
+      <p>
+        <b>The concept of Boxes</b><br>
+        Boxes have:<br>
+          - content<br>
+          - padding<br>
+          - border<br>
+          - margin<br>
+          Each of those can be formatted (size, color, etc.)<br>
+      </p>
+      <p>
+        The declaration "box-sizing:_border-box;" makes calculation of box size.<br>
+      </p>
+      <p>
+        Sizing can be expressed in pixels (px) or in %.<br>
+      </p>
+      <p>
+        <b>Box positioning</b>
+        <ol>
+        <li>Div's are block elements (as opposed to inline): by default, they take up the entire page width</li>
+        <li>Adding the rule "display:_flex;" to the appropriate CSS will override this behavior and let div's appear next to each other.</li>
+        </ol>
+      </p>
+        <h2>Advices</h2>
+        <ol><b>
+          <li>Lok for natural boxes</li>
+          <li>look for repeated styles and semantic elements</li>
+          <li>Write HTML</li>
+          <li>Apply styles from biggest to smallest</li>
+          <li>Fix things</li></b>
+        </ol>  
+  </div>
+
+</body>
+
+</html>
